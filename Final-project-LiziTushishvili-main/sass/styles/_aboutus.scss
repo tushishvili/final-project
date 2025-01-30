@@ -1,0 +1,42 @@
+.aboutus{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    background-color: black;
+    .infodiv{
+        margin: 20px auto;
+        width: 80%;
+        h4{
+            @include titlesettings;
+            margin-bottom:20px;
+            color: #DD2242;
+        }
+        p{
+            @include paragraphsettings
+        }
+        .imgclass{
+            max-width: 900px;
+            height: 400px;
+            @media(max-width: 850px){
+                height: 300px;
+            }
+            @media(max-width: 640px){
+                height: 250px;
+            }
+            @media(max-width: 470px){
+                height: 200px;
+            }
+            @media(max-width: 400px){
+                height: 150px;
+            }
+            margin: 40px auto;
+            img{
+                width: 100%;
+                height: 100%;
+                border-radius: 15px;
+            }
+        }
+    }
+}

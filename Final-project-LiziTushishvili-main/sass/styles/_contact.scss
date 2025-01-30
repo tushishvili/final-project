@@ -1,0 +1,43 @@
+#contact{
+    display: flex;
+    margin: 60px auto;
+    height: 400px;
+    max-width: 1200px;
+    width: 100%;
+    @media(max-width:1200px){
+        width: 95%;
+    }
+    flex-direction: column;
+    justify-content: space-between;
+    h3{
+        font-style: $fontfamily;
+        font-size: 60px;
+        @media(max-width:360px){
+            font-size: 40px;
+        }
+        color: gray;
+    }
+    .positiondiv{
+        display: flex;
+        flex-direction: column;
+        max-width: 1200px;
+        justify-content: space-between;
+        align-items: center;
+        .infodiv{
+            display: flex;
+            justify-content: space-between;
+            width: 150px;
+            height: 50px;
+            margin-top: 50px;
+        }
+        .mapdiv{
+            max-width: 1300px;
+            width: 100%;
+            height: 200px;
+            .map{
+                width: 100%;
+                height: 100%;
+            }
+        }
+    }
+}

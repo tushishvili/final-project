@@ -1,0 +1,51 @@
+@mixin button{
+        max-width: 250px;
+        width: 100%;
+        height: 50px;
+        border-radius: 211px;
+        background: var(--main-red, #DD2242);
+        color: white;
+        border: none;
+}
+@mixin backgroundproperties {
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+}
+@mixin footertextsettings{
+        color: var(--main-white, #FFF);
+        font-feature-settings: 'clig' off, 'liga' off;
+        font-family: "DM Sans" sans-serif;
+        font-size: 18px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 28px; /* 155.556% */
+        letter-spacing: 0.5px;
+}
+@mixin sectionsinfo{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        height: 450px;
+        max-width: 400px;
+        width: 100%;
+        vertical-align: middle;
+}
+@mixin paragraphsettings{
+        color: var(--text-lighten, #e0e0e0);
+        font-family: "DM Sans" sans-serif;
+        font-size: 18px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 28px;
+        letter-spacing: 0.18px;
+}
+@mixin titlesettings{
+        color: var(--white, #FFF);
+        font-feature-settings: 'clig' off, 'liga' off;
+        font-family: "DM Sans" sans-serif;
+        font-size: 42px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 50px; 
+}

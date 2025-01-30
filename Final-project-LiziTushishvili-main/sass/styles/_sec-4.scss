@@ -1,0 +1,87 @@
+.sec-4{
+    display: flex;
+    width: 100%;
+    height: 500px;
+    @media(max-width:760px){
+        height: 700px;
+    }
+    @media(max-width:480px){
+        height: 800px;
+    }
+    align-items: center;
+    justify-content: center;
+    background-color: black;
+    
+    .divclass{
+        display: flex;
+        flex-direction: column;
+        max-width: 1000px;
+        width: 100%;
+        @media(max-width:1065px){
+            width: 90%;
+        }
+        .introdiv{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            max-width: 1000px;
+            width: 100%;
+            max-height: 200px;
+            margin-bottom: 50px;
+            h1{
+                color: #FFF;
+                text-align: center;
+                font-family: $fontfamily;
+                font-size: 50px;
+                font-style: normal;
+                font-weight: 700;
+                line-height: 150%;
+            }
+            p{
+                color: var(--text-lighten, #E0E0E0);
+                text-align: center;
+                font-feature-settings: 'clig' off, 'liga' off;
+                font-family: $fontfamily;
+                font-size: 18px;
+                font-style: normal;
+                font-weight: 400;
+                line-height: 28px; 
+                letter-spacing: 0.5px;
+            }
+        }
+        .numberclass{
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            gap: 70px;
+            max-width: 1000px;
+            justify-content: space-between;
+            @media(max-width:760px){
+                justify-content: center;
+            }
+            .numberdiv{
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                width: 180px;
+                h2{
+                    color: #DD2242;
+                    font-size: 42px;
+                    font-weight: 700;
+                    font-family: $fontfamily;
+                }
+                p{
+                    color: var(--text-lighten, #E0E0E0);
+                    text-align: center;
+                    font-feature-settings: 'clig' off, 'liga' off;
+                    font-family: $fontfamily;
+                    font-size: 18px;
+                    font-style: normal;
+                    font-weight: 400;
+                    line-height: 28px; 
+                    letter-spacing: 0.5px;
+                }
+            }
+        }
+    }
+}
